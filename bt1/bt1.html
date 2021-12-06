@@ -1,43 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>bt1</title>
-    <style>
-      .content {
-        color: white;
-        width: 30%;
-        background: linear-gradient(to top, purple 30%, blue 80%);
-        border-radius: 20px;
-        text-align: center;
-        padding: 10px;
-      }
-      .content form input {
-        margin-bottom: 20px;
-        padding: 10px;
-        background: linear-gradient(to top, purple 30%, blue 80%);
-        color: white;
-      }
-        .content form input::-webkit-input-placeholder {
-        color: white;
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>bt1</title>
+  <style>
+    .content {
+      color: white;
+      width: 30%;
+      background: linear-gradient(to top, purple 30%, blue 80%);
+      border-radius: 20px;
+      text-align: center;
+      padding: 10px;
+    }
 
-      }
-    </style>
-  </head>
-  <body>
-    <div class="content">
-      <h3>ĐĂNG NHẬP</h3>
-      <form
-        action="https://www.codehub.com.vn/Ap-dung-CSS-style-cho-placeholder-de-tao-diem-nhan-trong-thiet-ke-text-input"
-      >
-        <input required type="text" placeholder="Nhập tên đăng ký" /> <br />
-        <input required type="password" placeholder="Nhập mật khẩu" /> <br />
-        <input type="checkbox" /> Nhớ để đăng nhập lần sau <br />
-        <input type="submit" value="Đăng nhập" /> <br />
-        <a href="#">Quên mật khẩu</a>
-      </form>
-    </div>
-  </body>
+    .content form input {
+      margin-bottom: 20px;
+      padding: 10px;
+      background: transparent;
+      border: none;
+      border-bottom: 1px solid white;
+    }
+    .content form input::placeholder {
+      color: white;
+    }
+    .content form .out{
+      background-color: white;
+      border-radius: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="content">
+    <h3>ĐĂNG NHẬP</h3>
+    <form
+      action="https://www.codehub.com.vn/Ap-dung-CSS-style-cho-placeholder-de-tao-diem-nhan-trong-thiet-ke-text-input">
+      <input required type="text" placeholder="Nhập tên đăng ký" /> <br />
+      <input required type="password" placeholder="Nhập mật khẩu" /> <br />
+      <input type="checkbox" /> Nhớ để đăng nhập lần sau <br />
+      <input class="out" type="submit" value="Đăng nhập" /> <br />
+      <a href="#">Quên mật khẩu</a>
+    </form>
+  </div>
+</body>
 </html>

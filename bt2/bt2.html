@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      form{
+        background-color: skyblue;
+        width: 300px;
+        padding: 10px 10px;
+      }
+      form .inform{
+        display: flex; 
+        margin-bottom: 10px;
+      }
+      form .inform label{
+        width: 100px;
+      }
+      form .inform1{
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="https://www.facebook.com/">
+      <div class="inform">
+        <label>Họ và tên:</label>
+        <input required type="text" placeholder="Hãy nhập tên người dùng" />
+      </div>
+      <div class="inform">
+        <label>Tên tài khoản:</label>
+        <input type="text" />
+      </div>
+      <div class="inform">
+        <label>Email:</label>
+        <input type="email" />
+      </div>
+      <div class="inform">
+        <label>Mật khẩu:</label>
+        <input type="password" maxlength="12" />
+      </div>
+      <div class="inform">
+        <label>Năm sinh:</label>
+        <input type="date" />
+      </div>
+      <div class="inform">
+        <label>giới tính:</label>
+        <input type="radio" name="sex" /> Nam
+        <input type="radio" name="sex" /> Nữ
+      </div>
+      <div class="inform">
+        <label>Thành phố:</label>
+        <select>
+          <option>Đà Nẵng</option>
+          <option>Huế</option>
+          <option>HCM</option>
+        </select>
+      </div>
+      <div class="inform">
+        <input type="checkbox" /> Tôi đã đọc và hiểu các điều khoản
+      </div>
+      <div class="inform1">
+        <input type="submit" value="Đăng ký" /> 
+        <input type="submit" value="Reset" /> 
+      </div>
+    </form>
+  </body>
+</html>
